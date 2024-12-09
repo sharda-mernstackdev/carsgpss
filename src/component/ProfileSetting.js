@@ -13,7 +13,7 @@ const ProfileSetting = () => {
   const fetchUserDetails = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch("http://localhost:3000/api/users/user-detail", {
+      const response = await fetch("http://43.204.140.10:3000/api/users/user-detail", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -88,7 +88,7 @@ const ProfileSetting = () => {
         formData.append("profilePicture", profilePicture);
       }
 
-      const response = await fetch(`http://localhost:3000/api/users/update/${user._id}`, {
+      const response = await fetch(`http://43.204.140.10:3000/api/users/update/${user._id}`, {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
