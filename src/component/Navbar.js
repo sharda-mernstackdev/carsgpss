@@ -125,7 +125,7 @@ const Navbar = () => {
     const fetchUserDetails = async () => {
       setIsLoading(true);
       try {
-        const response = await fetch('http://43.204.140.10:3000/api/users/user-detail', {
+        const response = await fetch('http://13.233.193.243:3000/api/users/user-detail', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${localStorage.getItem('token')}`,
@@ -160,7 +160,7 @@ const Navbar = () => {
   useEffect(() => {
     const fetchCartData = async () => {
       try {
-        const response = await fetch('http://43.204.140.10:3000/api/cart', {
+        const response = await fetch('http://13.233.193.243:3000/api/cart', {
           method: 'GET',
           credentials: 'include',
           headers: {
@@ -194,7 +194,7 @@ const Navbar = () => {
   const handleLogout = async () => {
     setIsLoggingOut(true);
     try {
-      const response = await fetch('http://43.204.140.10:3000/api/users/userLogout', {
+      const response = await fetch('http://13.233.193.243:3000/api/users/userLogout', {
         method: 'GET',
         credentials: 'include',
       });
