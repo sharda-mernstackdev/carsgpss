@@ -88,7 +88,7 @@ const CarUpload = () => {
         throw new Error('Authentication token not found');
       }
   
-      const response = await fetch('http://43.204.217.35:3000/api/cars/newCar', {
+      const response = await fetch('http://43.204.217.35:3001/api/cars/newCar', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
@@ -482,7 +482,7 @@ const CarUpload = () => {
           background-color: #f0f4f8;
         }
         .hero {
-          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhciUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1485291571150-772bcfc10da5?fm=jpg&q=60&w=3001&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhciUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
           background-size: cover;
           background-position: center;
           background-attachment: fixed;
