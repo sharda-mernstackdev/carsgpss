@@ -132,7 +132,7 @@ const fetchCarsData = async (budget, selectedFilters) => {
     // Convert selected filters to query string
     const filterQuery = selectedFilters.map(f => `${f.brand}:${f.model}`).join(',');
     const response = await fetch(
-      `http://43.204.217.35:3001/api/cars/cars?budgetMin=${budget[0]}&budgetMax=${budget[1]}&filters=${filterQuery}`,
+      `http://13.201.85.67:3001/api/cars/cars?budgetMin=${budget[0]}&budgetMax=${budget[1]}&filters=${filterQuery}`,
       {
         method: 'GET',
         headers: {
@@ -234,7 +234,7 @@ function UsedCars() {
 
   const handleAddToCart = async (carId) => {
     try {
-      const response = await fetch('http://43.204.217.35:3001/api/cart/add', {
+      const response = await fetch('http://13.201.85.67:3001/api/cart/add', {
         method: 'POST',
         credentials: 'include',
         headers: {
@@ -261,7 +261,7 @@ function UsedCars() {
 
   const handleRemoveFromCart = async (carId) => {
     try {
-      const response = await fetch(`http://43.204.217.35:3001/api/cart/remove/${carId}`, {
+      const response = await fetch(`http://13.201.85.67:3001/api/cart/remove/${carId}`, {
         method: 'DELETE',
         credentials: 'include',
         headers: {

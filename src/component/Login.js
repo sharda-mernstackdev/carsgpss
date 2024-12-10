@@ -32,7 +32,7 @@ export function Login() {
     setError("");
 
     try {
-      const response = await fetch("http://43.204.217.35:3001/api/users/login", {
+      const response = await fetch("http://13.201.85.67:3001/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

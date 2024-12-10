@@ -14,7 +14,7 @@ const port = 3001;
 connectDB();
 
 // Define allowed origins (you can include both localhost and public IP for production)
-const allowedOrigins = ['http://localhost:3001', 'http://43.204.217.35:30001','http://43.204.217.35','http://43.204.217.35:3001'];
+const allowedOrigins = ['http://localhost:3001', 'http://13.201.85.67:3001','http://13.201.85.67','http://13.201.85.67:3001'];
 
 // CORS middleware with dynamic origin handling
 app.use(cors({
