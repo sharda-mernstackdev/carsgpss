@@ -31,7 +31,7 @@ export function Signup() {
     setError('');
 
     try {
-      const response = await fetch('http://13.233.193.243:3000/api/users/signup', {
+      const response = await fetch('http://43.204.217.35:3000/api/users/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

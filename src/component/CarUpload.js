@@ -88,7 +88,7 @@ const CarUpload = () => {
         throw new Error('Authentication token not found');
       }
   
-      const response = await fetch('http://13.233.193.243:3000/api/cars/newCar', {
+      const response = await fetch('http://43.204.217.35:3000/api/cars/newCar', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,
